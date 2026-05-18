@@ -1,0 +1,97 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h1 + p {
+  text-align: center;
+  color: gray;
+  margin-top: -10px;
+}
+
+h2 {
+  color: #2980b9;
+  margin-top: 30px;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+}
+
+form {
+  background-color: white;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #cccccc;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin: 8px 5px 8px 0;
+}
+
+input[type="range"] {
+  width: 80%;
+  margin-top: 8px;
+}
+
+span {
+  font-weight: bold;
+  color: #2980b9;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 90px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2980b9;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a5276;
+}
+
+#msg {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: green;
+  font-weight: bold;
+}

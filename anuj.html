@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Student Course Feedback Form</h1>
+  <p>SBJIT | Web Designing | 2025-26</p>
+
+  <form id="myForm">
+
+    <!-- Student Details -->
+    <h2>Student Details</h2>
+
+    <label>Full Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>USN:</label>
+    <input type="text" id="usn" placeholder="Enter your USN">
+
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label>Semester:</label>
+    <select id="semester">
+      <option value="">-- Select Semester --</option>
+      <option>Semester 1</option>
+      <option>Semester 2</option>
+      <option>Semester 3</option>
+      <option>Semester 4</option>
+      <option>Semester 5</option>
+      <option>Semester 6</option>
+    </select>
+
+    <label>Course Name:</label>
+    <input type="text" id="course" placeholder="e.g. Web Designing">
+
+    <!-- Course Difficulty (Radio) -->
+    <h2>Course Difficulty</h2>
+    <p>How difficult was this course?</p>
+
+    <input type="radio" name="difficulty" value="Easy"> Easy <br>
+    <input type="radio" name="difficulty" value="Moderate"> Moderate <br>
+    <input type="radio" name="difficulty" value="Hard"> Hard <br>
+    <input type="radio" name="difficulty" value="Very Hard"> Very Hard <br>
+
+
+    <!-- Ratings (Range) -->
+    <h2>Course Ratings</h2>
+
+    <label>Overall Quality (1-10):</label>
+    <input type="range" id="quality" min="1" max="10" value="5"
+      oninput="document.getElementById('q-val').innerText = this.value">
+    <span id="q-val">5</span>
+
+    <label>Teaching Effectiveness (1-10):</label>
+    <input type="range" id="teaching" min="1" max="10" value="5"
+      oninput="document.getElementById('t-val').innerText = this.value">
+    <span id="t-val">5</span>
+
+    <label>Course Material (1-10):</label>
+    <input type="range" id="material" min="1" max="10" value="5"
+      oninput="document.getElementById('m-val').innerText = this.value">
+    <span id="m-val">5</span>
+
+    <!-- Comments (Textarea) -->
+    <h2>Your Comments</h2>
+
+    <label>What did you like about this course?</label>
+    <textarea id="liked" placeholder="Write here..."></textarea>
+
+    <label>What should be improved?</label>
+    <textarea id="improve" placeholder="Write here..."></textarea>
+
+    <label>Any other comments?</label>
+    <textarea id="other" placeholder="Write here..."></textarea>
+
+    <!-- Submit Button -->
+    <button type="button" onclick="submitForm()">Submit Feedback</button>
+
+    <!-- Message shown after submit -->
+    <p id="msg"></p>
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
